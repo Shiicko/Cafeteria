@@ -1,0 +1,261 @@
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  background-size: 300% 100%;
+  transition: background-position 0.3s ease;
+  position: relative; /* Añadido para posicionar correctamente el menú móvil */
+}
+
+header h1 {
+  font-family: "Pacifico", cursive;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 8px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem;
+}
+
+#home {
+  background-image: url(/Breakfast/coffee.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-text {
+  text-align: center;
+  color: #fff;
+  padding: 6px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.cardsTI,
+p {
+  text-align: center;
+}
+
+.about-us-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.about-us-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-item h3 {
+  margin-top: 0;
+}
+
+/* Estilos para la sección de promociones */
+
+.promotions-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.promotion-item {
+  width: 100%;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body h3 {
+  margin-top: 0;
+  text-align: center;
+  background-color: #070124d9;
+  color: white;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.card-body p {
+  margin-bottom: 0;
+}
+
+.menu-button {
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.menu-button a {
+  display: inline-block;
+  background-color: #242424;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-button a:hover {
+  background-color: #333;
+}
+/* Estilos para la sección de calidad */
+#quality {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.quality-container {
+  max-width: 1000px; /* Ampliar el ancho máximo del contenedor */
+  margin: 0 auto;
+  text-align: center;
+}
+
+.quality-container h2 {
+  margin-bottom: 1rem;
+}
+
+.quality-container p {
+  margin-bottom: 1rem;
+}
+
+#opening-hours-location {
+  display: flex;
+  justify-content: space-around;
+  padding: 0%;
+}
+
+.opening-hours-container,
+.location-container {
+  flex: 1;
+}
+
+.opening-hours-container {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.opening-hours-container h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.opening-hours-container ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.opening-hours-container ul li {
+  margin-bottom: 0.5rem;
+}
+
+.opening-hours-container p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: auto;
+}
+
+.location-container {
+  padding: 2rem;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.location-container h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.location-container iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
+
+footer {
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.footer-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}

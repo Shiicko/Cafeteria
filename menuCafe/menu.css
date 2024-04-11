@@ -1,0 +1,143 @@
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #160404; /* Negro o marrón oscuro */
+  color: #fff;
+}
+
+header {
+  background-image: url(/Breakfast/coffee.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 4rem;
+  transition: background-position 0.3s ease;
+  position: relative; /* Añadido para posicionar correctamente el menú móvil */
+}
+
+header h1 {
+  font-family: "Pacifico", cursive;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Negro casi transparente */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 8px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  padding: 10px;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.menu-list li {
+  background-color: #444;
+  padding: 20px;
+  border-bottom: 1px solid #666;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  text-align: end;
+  border-radius: 10px;
+}
+
+.menu-list li:last-child {
+  border-bottom: none;
+}
+
+.menu-list li img {
+  width: 200px;
+  /* margin-right: 20px; */
+  border-radius: 5px;
+}
+
+.menu-list li h3 {
+  margin-top: 0;
+  color: #fff;
+  padding: 10px; /* Añadido padding a los títulos */
+}
+
+.menu-list li p {
+  margin: 10px 0;
+  color: #ccc;
+}
+
+.menu-list li p:last-child {
+  font-weight: bold;
+  color: #fff;
+}
+
+footer {
+  background-color: #5f5f5f; /* Negro o marrón oscuro */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Estilos para hacer el menú responsive */
+@media only screen and (max-width: 768px) {
+  .menu-list li {
+    flex-direction: column;
+    align-items: center; /* Centrar elementos horizontalmente */
+    text-align: center; /* Centrar texto */
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+
+  .menu-list li img {
+    width: 150px; /* Ajusta el ancho de la imagen para dispositivos móviles */
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.back-button {
+  display: flex;
+  justify-content: center;
+  background-color: #444;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #333;
+}
+
+.back-button i {
+  margin-right: 5px;
+}
